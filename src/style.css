@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s;
+  }
+  
+  .task-manager {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .task-manager.dark {
+    background: #333;
+    color: white;
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .task-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .task-manager.dark .task-item {
+    background: #444;
+  }
+  
+  .delete-btn {
+    background: red;
+    color: white;
+  }
+  
+  @media (max-width: 480px) {
+    .task-manager {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  
